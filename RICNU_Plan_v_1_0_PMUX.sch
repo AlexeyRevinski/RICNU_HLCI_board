@@ -1,0 +1,260 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:RICNU_Plan_v_1_0
+LIBS:RICNU_Plan_v_1_0-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 12
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TPS2113 U4
+U 1 1 59D54BC4
+P 5700 3900
+F 0 "U4" H 5500 4200 60  0000 C CNN
+F 1 "TPS2113" H 5700 3600 60  0000 C CNN
+F 2 "" H 5700 3750 60  0001 C CNN
+F 3 "" H 5700 3750 60  0001 C CNN
+	1    5700 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR032
+U 1 1 59D54BCB
+P 6200 4500
+F 0 "#PWR032" H 6200 4250 50  0001 C CNN
+F 1 "GND" H 6200 4350 50  0000 C CNN
+F 2 "" H 6200 4500 50  0001 C CNN
+F 3 "" H 6200 4500 50  0001 C CNN
+	1    6200 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 4050 6200 4050
+Wire Wire Line
+	6200 4050 6200 4500
+$Comp
+L R R52
+U 1 1 59D54BD3
+P 5200 4250
+F 0 "R52" V 5300 4250 50  0000 C CNN
+F 1 "1k" V 5200 4250 50  0000 C CNN
+F 2 "" V 5130 4250 50  0001 C CNN
+F 3 "" H 5200 4250 50  0001 C CNN
+	1    5200 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 4050 5200 4050
+Wire Wire Line
+	5200 4050 5200 4100
+$Comp
+L GND #PWR033
+U 1 1 59D54BDC
+P 5200 4500
+F 0 "#PWR033" H 5200 4250 50  0001 C CNN
+F 1 "GND" H 5200 4350 50  0000 C CNN
+F 2 "" H 5200 4500 50  0001 C CNN
+F 3 "" H 5200 4500 50  0001 C CNN
+	1    5200 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4400 5200 4500
+$Comp
+L R R51
+U 1 1 59D54BE3
+P 4850 4250
+F 0 "R51" V 4950 4250 50  0000 C CNN
+F 1 "20k" V 4850 4250 50  0000 C CNN
+F 2 "" V 4780 4250 50  0001 C CNN
+F 3 "" H 4850 4250 50  0001 C CNN
+	1    4850 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R50
+U 1 1 59D54BEA
+P 4850 3700
+F 0 "R50" V 4950 3700 50  0000 C CNN
+F 1 "100k" V 4850 3700 50  0000 C CNN
+F 2 "" V 4780 3700 50  0001 C CNN
+F 3 "" H 4850 3700 50  0001 C CNN
+	1    4850 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3850 5050 3850
+Wire Wire Line
+	5050 3850 5050 4450
+Wire Wire Line
+	4850 4450 5200 4450
+Connection ~ 5200 4450
+Wire Wire Line
+	4850 4400 4850 4450
+Connection ~ 5050 4450
+Wire Wire Line
+	4850 3850 4850 4100
+Wire Wire Line
+	5250 3950 4850 3950
+Connection ~ 4850 3950
+$Comp
+L C C17
+U 1 1 59D54BFA
+P 6350 4200
+F 0 "C17" H 6375 4300 50  0000 L CNN
+F 1 "100n" H 6375 4100 50  0000 L CNN
+F 2 "" H 6388 4050 50  0001 C CNN
+F 3 "" H 6350 4200 50  0001 C CNN
+	1    6350 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C18
+U 1 1 59D54C01
+P 6600 4200
+F 0 "C18" H 6625 4300 50  0000 L CNN
+F 1 "100n" H 6625 4100 50  0000 L CNN
+F 2 "" H 6638 4050 50  0001 C CNN
+F 3 "" H 6600 4200 50  0001 C CNN
+	1    6600 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3950 6350 4050
+Wire Wire Line
+	6350 4350 6350 4450
+Wire Wire Line
+	6200 4450 6600 4450
+Connection ~ 6200 4450
+Wire Wire Line
+	6600 4450 6600 4350
+Connection ~ 6350 4450
+Connection ~ 6600 3750
+Text HLabel 4650 3450 0    60   Output ~ 0
+PMUX.STAT
+Connection ~ 6350 3950
+Wire Wire Line
+	6600 3250 6600 4050
+Wire Wire Line
+	5050 3750 5250 3750
+Wire Wire Line
+	4850 3550 4850 3350
+Wire Wire Line
+	4850 3350 6350 3350
+Wire Wire Line
+	6350 3350 6350 3750
+Connection ~ 6350 3750
+Wire Wire Line
+	6250 3450 6250 3850
+Connection ~ 6250 3850
+$Comp
+L R R53
+U 1 1 59D54FA5
+P 5700 3450
+F 0 "R53" V 5800 3550 50  0000 C CNN
+F 1 "100k" V 5700 3450 50  0000 C CNN
+F 2 "" V 5630 3450 50  0001 C CNN
+F 3 "" H 5700 3450 50  0001 C CNN
+	1    5700 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4650 3450 5550 3450
+Wire Wire Line
+	5850 3450 6250 3450
+Connection ~ 5050 3450
+Wire Wire Line
+	5050 3750 5050 3450
+$Comp
+L +5V #PWR034
+U 1 1 59F86FE4
+P 6750 3250
+F 0 "#PWR034" H 6750 3100 50  0001 C CNN
+F 1 "+5V" V 6750 3450 50  0000 C CNN
+F 2 "" H 6750 3250 50  0001 C CNN
+F 3 "" H 6750 3250 50  0001 C CNN
+	1    6750 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3750 7050 3750
+Wire Wire Line
+	6900 3950 6900 3250
+Wire Wire Line
+	6150 3950 7050 3950
+Wire Wire Line
+	6750 3250 6750 3850
+Wire Wire Line
+	6150 3850 7050 3850
+Text HLabel 7050 3950 2    60   Input ~ 0
+PMUX.IN2
+Text HLabel 7050 3750 2    60   Input ~ 0
+PMUX.IN1
+Text HLabel 7050 3850 2    60   Output ~ 0
+PMUX.OUT
+Connection ~ 6900 3950
+Connection ~ 6750 3850
+$Comp
+L +5V_USB_PROTECTED #PWR?
+U 1 1 59F92CFE
+P 6600 3250
+F 0 "#PWR?" H 6600 3100 50  0001 C CNN
+F 1 "+5V_USB_PROTECTED" V 6600 3750 50  0000 C CNN
+F 2 "" H 6600 3250 50  0001 C CNN
+F 3 "" H 6600 3250 50  0001 C CNN
+	1    6600 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V_EX_PROTECTED #PWR?
+U 1 1 59F92E3B
+P 6900 3250
+F 0 "#PWR?" H 6900 3100 50  0001 C CNN
+F 1 "+5V_EX_PROTECTED" V 6900 3750 50  0000 C CNN
+F 2 "" H 6900 3250 50  0001 C CNN
+F 3 "" H 6900 3250 50  0001 C CNN
+	1    6900 3250
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

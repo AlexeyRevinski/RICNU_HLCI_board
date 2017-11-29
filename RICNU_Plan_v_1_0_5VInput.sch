@@ -1,0 +1,247 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:RICNU_Plan_v_1_0
+LIBS:RICNU_Plan_v_1_0-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 16 17
+Title "RICNU Plan - Main"
+Date "2017-11-01"
+Rev "1.0"
+Comp "Shirley Ryan Ability Lab and Northwestern University"
+Comment1 "Engineer: Alexey Revinski"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L D_TVS D11
+U 1 1 59FB6607
+P 6150 4050
+F 0 "D11" V 6300 3950 50  0000 C CNN
+F 1 "TVS" V 6000 3950 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-523" H 6150 4050 50  0001 C CNN
+F 3 "" H 6150 4050 50  0001 C CNN
+	1    6150 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Zener D10
+U 1 1 59FB660E
+P 5450 4050
+F 0 "D10" V 5600 3950 50  0000 C CNN
+F 1 "5.6V" V 5300 3950 50  0000 C CNN
+F 2 "Diodes_SMD:D_SMA_Handsoldering" H 5450 4050 50  0001 C CNN
+F 3 "" H 5450 4050 50  0001 C CNN
+	1    5450 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Polyfuse F3
+U 1 1 59FB6615
+P 6400 3800
+F 0 "F3" V 6500 3800 50  0000 C CNN
+F 1 "Polyfuse" V 6300 3800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 6450 3600 50  0001 L CNN
+F 3 "" H 6400 3800 50  0001 C CNN
+	1    6400 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L C C36
+U 1 1 59FB661C
+P 5100 4050
+F 0 "C36" H 5125 4150 50  0000 L CNN
+F 1 "100n" H 5125 3950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402_NoSilk" H 5138 3900 50  0001 C CNN
+F 3 "" H 5100 4050 50  0001 C CNN
+	1    5100 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR077
+U 1 1 59FB6623
+P 4250 4400
+F 0 "#PWR077" H 4250 4150 50  0001 C CNN
+F 1 "GND" H 4250 4250 50  0000 C CNN
+F 2 "" H 4250 4400 50  0001 C CNN
+F 3 "" H 4250 4400 50  0001 C CNN
+	1    4250 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NMOS_GSD Q2
+U 1 1 59FB6630
+P 5800 4200
+F 0 "Q2" V 5700 4250 50  0000 L CNN
+F 1 "N-CH" V 6050 4100 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 6000 4300 50  0001 C CNN
+F 3 "" H 5800 4200 50  0001 C CNN
+	1    5800 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L C C35
+U 1 1 59FB6638
+P 4750 4050
+F 0 "C35" H 4775 4150 50  0000 L CNN
+F 1 "4.7u" H 4775 3950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4788 3900 50  0001 C CNN
+F 3 "" H 4750 4050 50  0001 C CNN
+	1    4750 4050
+	1    0    0    -1  
+$EndComp
+Text Notes 5850 5250 1    60   ~ 0
+NTR4003NT3G 
+Text Notes 5500 5200 1    60   ~ 0
+3SMAJ5919B
+Text Notes 6500 5150 1    60   ~ 0
+0ZCJ0025AF2E
+Text Notes 6200 5150 1    60   ~ 0
+DF2B7AFS,L3M
+$Comp
+L +5V_EXT #PWR078
+U 1 1 59FB6643
+P 6750 3700
+F 0 "#PWR078" H 6750 3550 50  0001 C CNN
+F 1 "+5V_EXT" H 6750 3840 50  0000 C CNN
+F 2 "" H 6750 3700 50  0001 C CNN
+F 3 "" H 6750 3700 50  0001 C CNN
+	1    6750 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V_EXT_P #PWR079
+U 1 1 59FB6649
+P 4250 3700
+F 0 "#PWR079" H 4250 3550 50  0001 C CNN
+F 1 "+5V_EXT_P" H 4250 3840 50  0000 C CNN
+F 2 "" H 4250 3700 50  0001 C CNN
+F 3 "" H 4250 3700 50  0001 C CNN
+	1    4250 3700
+	1    0    0    -1  
+$EndComp
+Connection ~ 4750 3800
+Connection ~ 4750 4300
+$Comp
+L R R82
+U 1 1 59FB6664
+P 4500 3800
+F 0 "R82" V 4580 3800 50  0000 C CNN
+F 1 "0" V 4500 3800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402_NoSilk" V 4430 3800 50  0001 C CNN
+F 3 "" H 4500 3800 50  0001 C CNN
+	1    4500 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L 2x0.1 J6
+U 1 1 59FC84C7
+P 7250 3850
+F 0 "J6" H 7100 4050 60  0000 C CNN
+F 1 "2x0.1" H 7250 3650 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7250 3850 60  0001 C CNN
+F 3 "" H 7250 3850 60  0001 C CNN
+	1    7250 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 3800 6250 3800
+Wire Wire Line
+	6550 3800 6850 3800
+Wire Wire Line
+	4250 4300 5600 4300
+Wire Wire Line
+	6000 4300 6750 4300
+Wire Wire Line
+	6750 3900 6750 4400
+Wire Wire Line
+	6750 3900 6850 3900
+Wire Wire Line
+	6150 4200 6150 4300
+Connection ~ 6150 4300
+Wire Wire Line
+	6150 3900 6150 3800
+Connection ~ 6150 3800
+Wire Wire Line
+	5800 4000 5800 3800
+Connection ~ 5800 3800
+Wire Wire Line
+	5450 3900 5450 3800
+Connection ~ 5450 3800
+Wire Wire Line
+	5100 3900 5100 3800
+Connection ~ 5100 3800
+Wire Wire Line
+	6750 3700 6750 3800
+Connection ~ 6750 3800
+Text Notes 7100 3800 0    60   ~ 0
+VIN
+Text Notes 7100 3900 0    60   ~ 0
+GND
+Wire Wire Line
+	5100 4200 5100 4300
+Connection ~ 5100 4300
+Wire Wire Line
+	5450 4200 5450 4300
+Connection ~ 5450 4300
+Wire Wire Line
+	4350 3800 4250 3800
+Wire Wire Line
+	4250 3800 4250 3700
+Wire Wire Line
+	4750 3900 4750 3800
+Wire Wire Line
+	4250 4300 4250 4400
+Wire Wire Line
+	4750 4300 4750 4200
+Text Label 6750 4300 0    60   ~ 0
+GND_5V_INPUT
+$Comp
+L PWR_FLAG #FLG080
+U 1 1 59FD51B4
+P 6750 4400
+F 0 "#FLG080" H 6750 4475 50  0001 C CNN
+F 1 "PWR_FLAG" H 6750 4550 50  0000 C CNN
+F 2 "" H 6750 4400 50  0001 C CNN
+F 3 "" H 6750 4400 50  0001 C CNN
+	1    6750 4400
+	-1   0    0    1   
+$EndComp
+Connection ~ 6750 4300
+Text Label 5100 3800 0    60   ~ 0
+5V_INP_PROTECTED
+$EndSCHEMATC
