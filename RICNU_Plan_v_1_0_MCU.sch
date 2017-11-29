@@ -375,25 +375,14 @@ F 3 "" H 2050 6850 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L SW_Push SW3
-U 1 1 59FA636E
-P 4800 5400
-F 0 "SW3" H 4850 5500 50  0000 L CNN
-F 1 "SW_Push" H 4800 5340 50  0000 C CNN
-F 2 "Buttons_Switches_SMD:SW_SPST_KMR2" H 4800 5600 50  0001 C CNN
-F 3 "" H 4800 5600 50  0001 C CNN
-	1    4800 5400
-	0    1    1    0   
-$EndComp
-$Comp
 L C C15
 U 1 1 59FA6375
-P 4600 5400
-F 0 "C15" H 4450 5500 50  0000 L CNN
-F 1 "100n" H 4400 5300 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402_NoSilk" H 4638 5250 50  0001 C CNN
-F 3 "" H 4600 5400 50  0001 C CNN
-	1    4600 5400
+P 4500 5400
+F 0 "C15" H 4350 5500 50  0000 L CNN
+F 1 "100n" H 4300 5300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402_NoSilk" H 4538 5250 50  0001 C CNN
+F 3 "" H 4500 5400 50  0001 C CNN
+	1    4500 5400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -597,11 +586,11 @@ Text Label 4550 2500 2    60   ~ 0
 MCU_BT_TX
 Text Label 2750 5900 0    60   ~ 0
 MCU_CAN_STB
-Text Label 4550 1700 2    60   ~ 0
+Text Label 6850 1400 0    60   ~ 0
 MCU_CAN_STB
 Text Label 2750 6000 0    60   ~ 0
 MCU_CAN_SHDN
-Text Label 6850 1400 0    60   ~ 0
+Text Label 4550 1700 2    60   ~ 0
 MCU_CAN_SHDN
 Text Label 2650 1600 0    60   ~ 0
 MCU_SD_SCK
@@ -1068,6 +1057,210 @@ F 3 "" H 10150 4200 50  0001 C CNN
 	1    10150 4200
 	-1   0    0    -1  
 $EndComp
+Text Label 8450 6250 2    60   ~ 0
+MCU_DIO_PB3
+Text Label 8450 6150 2    60   ~ 0
+MCU_DIO_PB4
+Text Label 8450 6050 2    60   ~ 0
+MCU_DIO_PB5
+Text Label 8450 5950 2    60   ~ 0
+MCU_DIO_PB6
+Text Label 8450 5850 2    60   ~ 0
+MCU_DIO_PB7
+Text Label 8450 5750 2    60   ~ 0
+MCU_DIO_PD2
+Text Label 8450 5250 2    60   ~ 0
+MCU_DIO_PA12
+Text Label 8450 5350 2    60   ~ 0
+MCU_DIO_PA11
+Text Label 8450 5450 2    60   ~ 0
+MCU_DIO_PA10
+Text Label 8450 5550 2    60   ~ 0
+MCU_DIO_PA9
+Text Label 8450 5650 2    60   ~ 0
+MCU_DIO_PA8
+Text Label 8450 5150 2    60   ~ 0
+MCU_DIO_PB10
+Text Label 8450 5050 2    60   ~ 0
+MCU_DIO_PB11
+Text Label 9200 3000 2    60   ~ 0
+MCU_LED_1
+Text Label 9200 3100 2    60   ~ 0
+MCU_LED_2
+Text Label 9200 3200 2    60   ~ 0
+MCU_LED_3
+Text Label 9200 3300 2    60   ~ 0
+MCU_LED_4
+$Comp
+L GND #PWR054
+U 1 1 59FB7028
+P 8500 4400
+F 0 "#PWR054" H 8500 4150 50  0001 C CNN
+F 1 "GND" H 8500 4250 50  0000 C CNN
+F 2 "" H 8500 4400 50  0001 C CNN
+F 3 "" H 8500 4400 50  0001 C CNN
+	1    8500 4400
+	-1   0    0    -1  
+$EndComp
+Text Notes 7450 6250 2    60   ~ 0
+SPI1/SPI3 SCK/GPIO
+Text Notes 7450 6150 2    60   ~ 0
+SPI1/SPI3 MISO/GPIO
+Text Notes 7450 6050 2    60   ~ 0
+SPI1/SPI3 MOSI/GPIO
+Text Notes 7450 5950 2    60   ~ 0
+I2C1 SCL/USART1 TX/GPIO
+Text Notes 7450 5850 2    60   ~ 0
+I2C1 SDA/USART1 RX/GPIO
+Text Notes 7450 5750 2    60   ~ 0
+(SPI NSS)/GPIO
+Text Notes 7450 5650 2    60   ~ 0
+MCO/GPIO
+Text Notes 7450 5550 2    60   ~ 0
+USART1 TX/GPIO
+Text Notes 7450 5450 2    60   ~ 0
+USART1 RX/GPIO
+Text Notes 7450 5350 2    60   ~ 0
+USART1 CTS/GPIO
+Text Notes 7450 5250 2    60   ~ 0
+USART1 RTS/GPIO
+Text Notes 7450 5150 2    60   ~ 0
+I2C2 SCL/USART3 TX/GPIO
+Text Notes 7450 5050 2    60   ~ 0
+I2C2 SDA/USART3 RX/GPIO
+Text Label 6850 3700 0    60   ~ 0
+MCU_DIO_PC6
+Text Label 6850 3600 0    60   ~ 0
+MCU_DIO_PC7
+Text Label 8450 4950 2    60   ~ 0
+MCU_DIO_PC6
+Text Label 8450 4850 2    60   ~ 0
+MCU_DIO_PC7
+Text Notes 7450 4950 2    60   ~ 0
+GPIO
+Text Notes 7450 4850 2    60   ~ 0
+GPIO
+Text HLabel 10650 4950 2    60   BiDi ~ 0
+MCU.PC6
+Text HLabel 10650 4850 2    60   BiDi ~ 0
+MCU.PC7
+Text Label 4550 2300 2    60   ~ 0
+MCU_DIO_PA0
+Text Label 8450 4750 2    60   ~ 0
+MCU_DIO_PA0
+Text Notes 7450 4750 2    60   ~ 0
+WKUP/GPIO
+Text HLabel 10650 4750 2    60   BiDi ~ 0
+MCU.PA0
+Text Notes 7550 4750 0    60   ~ 0
+--
+Text Notes 7550 4850 0    60   ~ 0
+--
+Text Notes 7550 4950 0    60   ~ 0
+--
+Text Notes 7550 5050 0    60   ~ 0
+PU
+Text Notes 7550 5150 0    60   ~ 0
+PU
+Text Notes 7550 5250 0    60   ~ 0
+PU
+Text Notes 7550 5350 0    60   ~ 0
+PU
+Text Notes 7550 5450 0    60   ~ 0
+PU
+Text Notes 7550 5550 0    60   ~ 0
+PU
+Text Notes 7550 5650 0    60   ~ 0
+PU
+Text Notes 7550 5750 0    60   ~ 0
+PU
+Text Notes 7550 5850 0    60   ~ 0
+PU
+Text Notes 7550 5950 0    60   ~ 0
+PU
+Text Notes 7550 6050 0    60   ~ 0
+PU
+Text Notes 7550 6150 0    60   ~ 0
+PU
+Text Notes 7550 6250 0    60   ~ 0
+PD
+Text Notes 11100 4600 2    60   ~ 0
+GPIO Breakout
+Text Notes 10850 2850 2    60   ~ 0
+LED Controls
+Text Label 4950 1200 2    60   ~ 0
+OSC32_IN
+Text Label 4950 1300 2    60   ~ 0
+OSC32_OUT
+Text Label 8650 1650 0    60   ~ 0
+MCU_VCC
+Text Label 6850 1000 0    60   ~ 0
+MCU_VCC
+Text Label 4550 750  2    60   ~ 0
+MCU_VCC
+Text Label 6850 2600 0    60   ~ 0
+MCU_VCC
+Text Label 4550 4100 2    60   ~ 0
+MCU_VCC
+Text Label 4550 2800 2    60   ~ 0
+MCU_VCC
+Text Label 4550 2200 2    60   ~ 0
+MCU_VCC
+$Comp
+L R R86
+U 1 1 5A14C72F
+P 2250 4350
+F 0 "R86" V 2350 4350 50  0000 C CNN
+F 1 "10k" V 2250 4350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402_NoSilk" V 2180 4350 50  0001 C CNN
+F 3 "" H 2250 4350 50  0001 C CNN
+	1    2250 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR055
+U 1 1 5A14C9ED
+P 2250 4150
+F 0 "#PWR055" H 2250 4000 50  0001 C CNN
+F 1 "+3V3" H 2250 4290 50  0000 C CNN
+F 2 "" H 2250 4150 50  0001 C CNN
+F 3 "" H 2250 4150 50  0001 C CNN
+	1    2250 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R87
+U 1 1 5A15ECA3
+P 9950 4550
+F 0 "R87" V 10000 4750 50  0000 C CNN
+F 1 "10k" V 9950 4550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402_NoSilk" V 9880 4550 50  0001 C CNN
+F 3 "" H 9950 4550 50  0001 C CNN
+	1    9950 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R88
+U 1 1 5A15ED6A
+P 10050 4550
+F 0 "R88" V 10100 4750 50  0000 C CNN
+F 1 "10k" V 10050 4550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402_NoSilk" V 9980 4550 50  0001 C CNN
+F 3 "" H 10050 4550 50  0001 C CNN
+	1    10050 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R89
+U 1 1 5A15EE34
+P 10150 4550
+F 0 "R89" V 10200 4750 50  0000 C CNN
+F 1 "10k" V 10150 4550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402_NoSilk" V 10080 4550 50  0001 C CNN
+F 3 "" H 10150 4550 50  0001 C CNN
+	1    10150 4550
+	1    0    0    -1  
+$EndComp
 Connection ~ 8550 1650
 Wire Wire Line
 	10050 1650 10050 1700
@@ -1225,16 +1418,16 @@ Wire Wire Line
 Wire Wire Line
 	2200 1400 2650 1400
 Wire Wire Line
-	4600 5250 4600 5100
+	4500 5250 4500 5100
 Wire Wire Line
 	4800 5100 4800 5200
 Wire Wire Line
 	4800 5600 4800 5700
 Wire Wire Line
-	4600 5650 4800 5650
+	4500 5650 4800 5650
 Connection ~ 4800 5650
 Wire Wire Line
-	4600 5550 4600 5650
+	4500 5550 4500 5650
 Wire Wire Line
 	4550 1700 4950 1700
 Wire Wire Line
@@ -1256,7 +1449,7 @@ Wire Wire Line
 Wire Wire Line
 	2200 2750 2750 2750
 Wire Wire Line
-	4600 5100 4900 5100
+	4500 5100 4900 5100
 Wire Wire Line
 	1900 2750 1650 2750
 Wire Wire Line
@@ -1315,8 +1508,6 @@ Wire Wire Line
 Wire Wire Line
 	1650 1700 2650 1700
 Wire Wire Line
-	4950 1000 4550 1000
-Wire Wire Line
 	4950 2200 4550 2200
 Wire Wire Line
 	4550 2800 4950 2800
@@ -1350,7 +1541,7 @@ Connection ~ 8550 2050
 Wire Wire Line
 	10650 2050 10650 2000
 Wire Wire Line
-	8550 1650 8550 1700
+	8550 1550 8550 1700
 Connection ~ 4800 5100
 Wire Wire Line
 	8450 4750 10200 4750
@@ -1483,32 +1674,6 @@ Wire Wire Line
 	10500 6150 10650 6150
 Wire Wire Line
 	10500 6250 10650 6250
-Text Label 8450 6250 2    60   ~ 0
-MCU_DIO_PB3
-Text Label 8450 6150 2    60   ~ 0
-MCU_DIO_PB4
-Text Label 8450 6050 2    60   ~ 0
-MCU_DIO_PB5
-Text Label 8450 5950 2    60   ~ 0
-MCU_DIO_PB6
-Text Label 8450 5850 2    60   ~ 0
-MCU_DIO_PB7
-Text Label 8450 5750 2    60   ~ 0
-MCU_DIO_PD2
-Text Label 8450 5250 2    60   ~ 0
-MCU_DIO_PA12
-Text Label 8450 5350 2    60   ~ 0
-MCU_DIO_PA11
-Text Label 8450 5450 2    60   ~ 0
-MCU_DIO_PA10
-Text Label 8450 5550 2    60   ~ 0
-MCU_DIO_PA9
-Text Label 8450 5650 2    60   ~ 0
-MCU_DIO_PA8
-Text Label 8450 5150 2    60   ~ 0
-MCU_DIO_PB10
-Text Label 8450 5050 2    60   ~ 0
-MCU_DIO_PB11
 Wire Wire Line
 	10300 3000 9200 3000
 Wire Wire Line
@@ -1517,25 +1682,6 @@ Wire Wire Line
 	10300 3200 9200 3200
 Wire Wire Line
 	10300 3300 9200 3300
-Text Label 9200 3000 2    60   ~ 0
-MCU_LED_1
-Text Label 9200 3100 2    60   ~ 0
-MCU_LED_2
-Text Label 9200 3200 2    60   ~ 0
-MCU_LED_3
-Text Label 9200 3300 2    60   ~ 0
-MCU_LED_4
-$Comp
-L GND #PWR054
-U 1 1 59FB7028
-P 8500 4400
-F 0 "#PWR054" H 8500 4150 50  0001 C CNN
-F 1 "GND" H 8500 4250 50  0000 C CNN
-F 2 "" H 8500 4400 50  0001 C CNN
-F 3 "" H 8500 4400 50  0001 C CNN
-	1    8500 4400
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	8500 4400 8500 4250
 Wire Wire Line
@@ -1544,181 +1690,22 @@ Wire Wire Line
 	8650 4250 8650 4400
 Wire Wire Line
 	8650 6250 8650 4700
-Text Notes 7450 6250 2    60   ~ 0
-SPI1/SPI3 SCK/GPIO
-Text Notes 7450 6150 2    60   ~ 0
-SPI1/SPI3 MISO/GPIO
-Text Notes 7450 6050 2    60   ~ 0
-SPI1/SPI3 MOSI/GPIO
-Text Notes 7450 5950 2    60   ~ 0
-I2C1 SCL/USART1 TX/GPIO
-Text Notes 7450 5850 2    60   ~ 0
-I2C1 SDA/USART1 RX/GPIO
-Text Notes 7450 5750 2    60   ~ 0
-(SPI NSS)/GPIO
-Text Notes 7450 5650 2    60   ~ 0
-MCO/GPIO
-Text Notes 7450 5550 2    60   ~ 0
-USART1 TX/GPIO
-Text Notes 7450 5450 2    60   ~ 0
-USART1 RX/GPIO
-Text Notes 7450 5350 2    60   ~ 0
-USART1 CTS/GPIO
-Text Notes 7450 5250 2    60   ~ 0
-USART1 RTS/GPIO
-Text Notes 7450 5150 2    60   ~ 0
-I2C2 SCL/USART3 TX/GPIO
-Text Notes 7450 5050 2    60   ~ 0
-I2C2 SDA/USART3 RX/GPIO
 Wire Wire Line
 	6450 3600 6850 3600
 Wire Wire Line
 	6450 3700 6850 3700
-Text Label 6850 3700 0    60   ~ 0
-MCU_DIO_PC6
-Text Label 6850 3600 0    60   ~ 0
-MCU_DIO_PC7
 Wire Wire Line
 	8450 4950 10200 4950
-Text Label 8450 4950 2    60   ~ 0
-MCU_DIO_PC6
-Text Label 8450 4850 2    60   ~ 0
-MCU_DIO_PC7
-Text Notes 7450 4950 2    60   ~ 0
-GPIO
-Text Notes 7450 4850 2    60   ~ 0
-GPIO
-Text HLabel 10650 4950 2    60   BiDi ~ 0
-MCU.PC6
-Text HLabel 10650 4850 2    60   BiDi ~ 0
-MCU.PC7
 Wire Wire Line
 	4950 2300 4550 2300
-Text Label 4550 2300 2    60   ~ 0
-MCU_DIO_PA0
-Text Label 8450 4750 2    60   ~ 0
-MCU_DIO_PA0
-Text Notes 7450 4750 2    60   ~ 0
-WKUP/GPIO
-Text HLabel 10650 4750 2    60   BiDi ~ 0
-MCU.PA0
 Wire Wire Line
 	8750 4250 10150 4250
 Connection ~ 9850 4250
-Text Notes 7550 4750 0    60   ~ 0
---
-Text Notes 7550 4850 0    60   ~ 0
---
-Text Notes 7550 4950 0    60   ~ 0
---
-Text Notes 7550 5050 0    60   ~ 0
-PU
-Text Notes 7550 5150 0    60   ~ 0
-PU
-Text Notes 7550 5250 0    60   ~ 0
-PU
-Text Notes 7550 5350 0    60   ~ 0
-PU
-Text Notes 7550 5450 0    60   ~ 0
-PU
-Text Notes 7550 5550 0    60   ~ 0
-PU
-Text Notes 7550 5650 0    60   ~ 0
-PU
-Text Notes 7550 5750 0    60   ~ 0
-PU
-Text Notes 7550 5850 0    60   ~ 0
-PU
-Text Notes 7550 5950 0    60   ~ 0
-PU
-Text Notes 7550 6050 0    60   ~ 0
-PU
-Text Notes 7550 6150 0    60   ~ 0
-PU
-Text Notes 7550 6250 0    60   ~ 0
-PD
-Text Notes 11100 4600 2    60   ~ 0
-GPIO Breakout
-Text Notes 10850 2850 2    60   ~ 0
-LED Controls
-Text Label 4950 1200 2    60   ~ 0
-OSC32_IN
-Text Label 4950 1300 2    60   ~ 0
-OSC32_OUT
-Text Label 8550 1650 0    60   ~ 0
-MCU_VCC
-Text Label 6850 1000 0    60   ~ 0
-MCU_VCC
-Text Label 4550 750  2    60   ~ 0
-MCU_VCC
-Text Label 6850 2600 0    60   ~ 0
-MCU_VCC
-Text Label 4550 4100 2    60   ~ 0
-MCU_VCC
-Text Label 4550 2800 2    60   ~ 0
-MCU_VCC
-Text Label 4550 2200 2    60   ~ 0
-MCU_VCC
-$Comp
-L R R86
-U 1 1 5A14C72F
-P 2250 4350
-F 0 "R86" V 2350 4350 50  0000 C CNN
-F 1 "10k" V 2250 4350 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402_NoSilk" V 2180 4350 50  0001 C CNN
-F 3 "" H 2250 4350 50  0001 C CNN
-	1    2250 4350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2250 4500 2250 4550
 Connection ~ 2250 4550
-$Comp
-L +3V3 #PWR055
-U 1 1 5A14C9ED
-P 2250 4150
-F 0 "#PWR055" H 2250 4000 50  0001 C CNN
-F 1 "+3V3" H 2250 4290 50  0000 C CNN
-F 2 "" H 2250 4150 50  0001 C CNN
-F 3 "" H 2250 4150 50  0001 C CNN
-	1    2250 4150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2250 4200 2250 4150
-$Comp
-L R R87
-U 1 1 5A15ECA3
-P 9950 4550
-F 0 "R87" V 10000 4750 50  0000 C CNN
-F 1 "10k" V 9950 4550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402_NoSilk" V 9880 4550 50  0001 C CNN
-F 3 "" H 9950 4550 50  0001 C CNN
-	1    9950 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R88
-U 1 1 5A15ED6A
-P 10050 4550
-F 0 "R88" V 10100 4750 50  0000 C CNN
-F 1 "10k" V 10050 4550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402_NoSilk" V 9980 4550 50  0001 C CNN
-F 3 "" H 10050 4550 50  0001 C CNN
-	1    10050 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R89
-U 1 1 5A15EE34
-P 10150 4550
-F 0 "R89" V 10200 4750 50  0000 C CNN
-F 1 "10k" V 10150 4550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402_NoSilk" V 10080 4550 50  0001 C CNN
-F 3 "" H 10150 4550 50  0001 C CNN
-	1    10150 4550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10150 4700 10150 4750
 Connection ~ 10150 4750
@@ -1742,7 +1729,33 @@ Wire Wire Line
 Wire Wire Line
 	6450 1400 6850 1400
 Wire Wire Line
-	4550 1000 4550 750 
-Wire Wire Line
 	4550 2400 4950 2400
+$Comp
+L SW_Push_4pin SW3
+U 1 1 5A1F6511
+P 4800 5400
+F 0 "SW3" H 4850 5500 50  0000 L CNN
+F 1 "SW_Push_4pin" H 4800 5200 50  0000 C CNN
+F 2 "RICNU_Plan_v_1_0:SW_SPST_KMR7" H 4800 5600 50  0001 C CNN
+F 3 "" H 4800 5600 50  0001 C CNN
+	1    4800 5400
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4550 750  4550 1000
+Wire Wire Line
+	4550 1000 4950 1000
+$Comp
+L PWR_FLAG #FLG056
+U 1 1 5A1F94A7
+P 8550 1550
+F 0 "#FLG056" H 8550 1625 50  0001 C CNN
+F 1 "PWR_FLAG" H 8550 1700 50  0000 C CNN
+F 2 "" H 8550 1550 50  0001 C CNN
+F 3 "" H 8550 1550 50  0001 C CNN
+	1    8550 1550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4900 5600
+NoConn ~ 4900 5200
 $EndSCHEMATC

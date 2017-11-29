@@ -60,7 +60,7 @@ F 1 "DF52-4S-0.8H(21)" V 6950 3750 60  0000 C CNN
 F 2 "Connectors_Hirose:Hirose_DF52-4S-0.8H_04x0.80mm_Angled" H 6750 3750 60  0001 C CNN
 F 3 "" H 6750 3750 60  0001 C CNN
 	1    6750 3750
-	1    0    0    1   
+	1    0    0    -1  
 $EndComp
 Text Notes 6650 3600 0    60   ~ 0
 NC
@@ -84,19 +84,15 @@ F 3 "" H 5700 3850 60  0001 C CNN
 $EndComp
 Wire Wire Line
 	5400 4150 5300 4150
-Wire Wire Line
-	5300 4150 5300 3900
-Connection ~ 5300 3900
+Connection ~ 5200 3900
 Wire Wire Line
 	5400 4250 5200 4250
-Wire Wire Line
-	5200 4250 5200 3800
-Connection ~ 5200 3800
+Connection ~ 5300 3800
 $Comp
-L GND #PWR065
+L GND #PWR066
 U 1 1 59FAEED6
 P 6300 4350
-F 0 "#PWR065" H 6300 4100 50  0001 C CNN
+F 0 "#PWR066" H 6300 4100 50  0001 C CNN
 F 1 "GND" H 6300 4200 50  0000 C CNN
 F 2 "" H 6300 4350 50  0001 C CNN
 F 3 "" H 6300 4350 50  0001 C CNN
@@ -114,4 +110,8 @@ Text Notes 6650 3800 0    60   ~ 0
 DB+
 Text Notes 6650 3900 0    60   ~ 0
 DA-
+Wire Wire Line
+	5300 4150 5300 3800
+Wire Wire Line
+	5200 4250 5200 3900
 $EndSCHEMATC

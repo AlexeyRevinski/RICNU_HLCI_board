@@ -30,6 +30,16 @@ D 0Ohm Resistor
 K r res resistor test t
 $ENDCMP
 #
+$CMP SW_Push
+D Push button switch, generic, two pins
+K switch normally-open pushbutton push-button
+$ENDCMP
+#
+$CMP SW_Push_4pin
+D Push button switch, generic, two pins
+K switch normally-open pushbutton push-button
+$ENDCMP
+#
 $CMP TEST
 D 0Ohm Resistor
 K r res resistor test t
