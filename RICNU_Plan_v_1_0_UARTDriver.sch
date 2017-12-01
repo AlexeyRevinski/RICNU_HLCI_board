@@ -132,9 +132,9 @@ Wire Wire Line
 Wire Wire Line
 	6000 4000 6100 4000
 Wire Wire Line
-	6100 3550 6100 4000
+	6100 4000 6100 3550
 Wire Wire Line
-	4750 3550 6100 3550
+	6100 3550 4750 3550
 Wire Wire Line
 	4850 4750 4850 4300
 Wire Wire Line

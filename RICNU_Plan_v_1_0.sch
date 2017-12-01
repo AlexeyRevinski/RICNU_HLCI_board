@@ -48,33 +48,35 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 3798 5702 1702 298 
+S 3798 5902 1702 298 
 U 59D46777
 F0 "Power Conditioning" 60
 F1 "RICNU_Plan_v_1_0_Power.sch" 60
 $EndSheet
 $Sheet
-S 6200 5150 1700 850 
+S 6200 5350 1700 850 
 U 59E3791C
 F0 "Bus Driver" 60
 F1 "RICNU_Plan_v_1_0_UARTDriver.sch" 60
-F2 "UMUX.BT.TX" I R 7900 5800 60 
-F3 "UMUX.BT.RX" O R 7900 5900 60 
-F4 "UMUX.U2U.RX" O L 6200 5250 60 
-F5 "UMUX.U2U.TX" I L 6200 5350 60 
-F6 "UMUX.MCU.RX" O R 7900 5250 60 
-F7 "UMUX.MCU.TX" I R 7900 5350 60 
-F8 "UMUX.BT.BOOT" O R 7900 5700 60 
+F2 "UMUX.BT.TX" I R 7900 6000 60 
+F3 "UMUX.BT.RX" O R 7900 6100 60 
+F4 "UMUX.U2U.RX" O L 6200 5450 60 
+F5 "UMUX.U2U.TX" I L 6200 5550 60 
+F6 "UMUX.MCU.RX" O R 7900 5450 60 
+F7 "UMUX.MCU.TX" I R 7900 5550 60 
+F8 "UMUX.BT.BOOT" O R 7900 5900 60 
 $EndSheet
 $Sheet
-S 3800 5150 1700 300 
+S 3800 5150 1700 500 
 U 59D3E543
 F0 "USB to UART" 60
 F1 "RICNU_Plan_v_1_0_USB2UART.sch" 60
-F2 "U2U.TX" O R 5500 5350 60 
-F3 "U2U.RX" I R 5500 5250 60 
+F2 "U2U.TX" O R 5500 5550 60 
+F3 "U2U.RX" I R 5500 5450 60 
 F4 "U2U.USB.DP" B L 3800 5250 60 
 F5 "U2U.USB.DM" B L 3800 5350 60 
+F6 "U2U.PWREN" O R 5500 5250 60 
+F7 "U2U.USBON" O R 5500 5350 60 
 $EndSheet
 $Sheet
 S 3800 3650 1700 500 
@@ -113,20 +115,20 @@ Acceptable logic current for CAN transceiver is 8mA
 Text Notes 9800 9550 0    60   ~ 0
 Series protection resistor included in "Breakout"
 $Sheet
-S 8600 5600 1700 400 
+S 8600 5800 1700 400 
 U 59D3E54A
 F0 "Bluetooth" 60
 F1 "RICNU_Plan_v_1_0_Bluetooth.sch" 60
-F2 "BT.BOOT0" I L 8600 5700 60 
-F3 "BT.RX" I L 8600 5900 60 
-F4 "BT.TX" O L 8600 5800 60 
+F2 "BT.BOOT0" I L 8600 5900 60 
+F3 "BT.RX" I L 8600 6100 60 
+F4 "BT.TX" O L 8600 6000 60 
 $EndSheet
 Text Notes 6750 9100 0    60   ~ 0
 need to talk about the 470 resistor...
 Text Notes 850  9000 0    60   ~ 0
 Open copper ring around the periphery of the board\nstitched throughout with vias & connected to USB shield \nand SD card shield. - ESD protection and edge EMC.\nAn external ESD strike will prefer the ring/shield casing for SD/USB instead \nof the components, and will be either earthed if connected to PC+wall\nor discharged into board ground via multiple small caps (see SD and USB).\nIf on the knee, discharged into the screw(s?) and into the metal leg
 $Sheet
-S 6200 1400 1700 3500
+S 6200 1400 1700 3700
 U 59D3E349
 F0 "MCU" 60
 F1 "RICNU_Plan_v_1_0_MCU.sch" 60
@@ -172,6 +174,8 @@ F40 "MCU.LED.4" I R 7900 4200 60
 F41 "MCU.PC6" B R 7900 2100 60 
 F42 "MCU.PC7" B R 7900 1900 60 
 F43 "MCU.PA0" B R 7900 1500 60 
+F44 "MCU.PWREN" I L 6200 4900 60 
+F45 "MCU.USBON" I L 6200 5000 60 
 $EndSheet
 Text Notes 10400 9200 0    60   ~ 0
 PB3 is clock line for SPI
@@ -279,27 +283,27 @@ Wire Wire Line
 Wire Wire Line
 	5500 4800 6200 4800
 Wire Wire Line
-	5500 5250 6200 5250
+	5500 5450 6200 5450
 Wire Wire Line
-	5500 5350 6200 5350
+	5500 5550 6200 5550
 Wire Wire Line
-	7900 5250 8600 5250
+	7900 5450 8600 5450
 Wire Wire Line
-	8600 5250 8600 4800
+	8600 5450 8600 4800
 Wire Wire Line
 	8600 4800 7900 4800
 Wire Wire Line
 	7900 4700 8700 4700
 Wire Wire Line
-	8700 4700 8700 5350
+	8700 4700 8700 5550
 Wire Wire Line
-	8700 5350 7900 5350
-Wire Wire Line
-	8600 5700 7900 5700
-Wire Wire Line
-	8600 5800 7900 5800
+	8700 5550 7900 5550
 Wire Wire Line
 	8600 5900 7900 5900
+Wire Wire Line
+	8600 6000 7900 6000
+Wire Wire Line
+	8600 6100 7900 6100
 $Sheet
 S 8600 1400 1700 1700
 U 5A001EF4
@@ -376,9 +380,9 @@ Text Label 5550 4700 0    60   ~ 0
 RS485_RXE
 Text Label 5550 4800 0    60   ~ 0
 RS485_RX
-Text Label 5550 5250 0    60   ~ 0
+Text Label 5550 5450 0    60   ~ 0
 FTDI_UART_RX
-Text Label 5550 5350 0    60   ~ 0
+Text Label 5550 5550 0    60   ~ 0
 FTDI_UART_TX
 Text Label 3150 5250 0    60   ~ 0
 USB_D+
@@ -388,15 +392,15 @@ Text Label 3150 4600 0    60   ~ 0
 RS485_D-
 Text Label 3150 4500 0    60   ~ 0
 RS485_D+
-Text Label 7950 5350 0    60   ~ 0
+Text Label 7950 5550 0    60   ~ 0
 MCU_UART_TX
-Text Label 7950 5250 0    60   ~ 0
+Text Label 7950 5450 0    60   ~ 0
 MCU_UART_RX
-Text Label 7950 5700 0    60   ~ 0
-BT_BOOT0
 Text Label 7950 5800 0    60   ~ 0
-BT_UART_TX
+BT_BOOT0
 Text Label 7950 5900 0    60   ~ 0
+BT_UART_TX
+Text Label 7950 6000 0    60   ~ 0
 BT_UART_RX
 Wire Wire Line
 	7900 1500 8600 1500
@@ -463,7 +467,7 @@ DIO15
 Text Label 7950 3000 0    60   ~ 0
 DIO16
 $Sheet
-S 1400 5700 1700 300 
+S 1400 5900 1700 300 
 U 59FC1385
 F0 "5V Power Input Connector" 60
 F1 "RICNU_Plan_v_1_0_5VInput.sch" 60
@@ -499,4 +503,20 @@ Text Notes 4300 4500 0    60   ~ 0
 *
 Text Notes 2700 6600 0    60   ~ 0
 *
+Wire Wire Line
+	6200 4900 6000 4900
+Wire Wire Line
+	6000 4900 6000 5250
+Wire Wire Line
+	6000 5250 5500 5250
+Wire Wire Line
+	5500 5350 6100 5350
+Wire Wire Line
+	6100 5350 6100 5000
+Wire Wire Line
+	6100 5000 6200 5000
+Text Label 5550 5350 0    60   ~ 0
+FTDI_USBON
+Text Label 5550 5250 0    60   ~ 0
+FTDI_PWREN
 $EndSCHEMATC

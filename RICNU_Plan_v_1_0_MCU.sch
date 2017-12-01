@@ -210,13 +210,8 @@ Text HLabel 1650 4550 0    60   Input ~ 0
 MCU.RS485.RX
 Text HLabel 1650 4650 0    60   Output ~ 0
 MCU.RS485.TX
-NoConn ~ 6450 3400
-NoConn ~ 4950 3500
-NoConn ~ 4950 3600
-NoConn ~ 4950 3700
 NoConn ~ 4950 3400
 NoConn ~ 4950 1100
-NoConn ~ 6450 3500
 Text HLabel 10650 5050 2    60   BiDi ~ 0
 MCU.PB11
 Text HLabel 10650 5150 2    60   BiDi ~ 0
@@ -586,7 +581,7 @@ Text Label 4550 2500 2    60   ~ 0
 MCU_BT_TX
 Text Label 2750 5900 0    60   ~ 0
 MCU_CAN_STB
-Text Label 6850 1400 0    60   ~ 0
+Text Label 4550 1800 2    60   ~ 0
 MCU_CAN_STB
 Text Label 2750 6000 0    60   ~ 0
 MCU_CAN_SHDN
@@ -606,13 +601,13 @@ Text Notes 850  2400 0    60   ~ 0
 SWD
 Text Notes 900  1150 0    60   ~ 0
 SPI to SD Card
-Text Label 4550 1800 2    60   ~ 0
-MCU_LED_1
-Text Label 4550 1900 2    60   ~ 0
-MCU_LED_2
-Text Label 4550 2000 2    60   ~ 0
-MCU_LED_3
 Text Label 4550 2400 2    60   ~ 0
+MCU_LED_1
+Text Label 4550 3500 2    60   ~ 0
+MCU_LED_2
+Text Label 4550 3600 2    60   ~ 0
+MCU_LED_3
+Text Label 4550 3700 2    60   ~ 0
 MCU_LED_4
 $Comp
 L GND #PWR046
@@ -719,13 +714,13 @@ Text Label 4550 3800 2    60   ~ 0
 MCU_DIO_PB10
 Text Label 4550 3900 2    60   ~ 0
 MCU_DIO_PB11
-Text HLabel 10300 3000 2    60   Input ~ 0
+Text HLabel 10300 2550 2    60   Input ~ 0
 MCU.LED.1
-Text HLabel 10300 3100 2    60   Input ~ 0
+Text HLabel 10300 2650 2    60   Input ~ 0
 MCU.LED.2
-Text HLabel 10300 3200 2    60   Input ~ 0
+Text HLabel 10300 2750 2    60   Input ~ 0
 MCU.LED.3
-Text HLabel 10300 3300 2    60   Input ~ 0
+Text HLabel 10300 2850 2    60   Input ~ 0
 MCU.LED.4
 $Comp
 L R R51
@@ -1083,13 +1078,13 @@ Text Label 8450 5150 2    60   ~ 0
 MCU_DIO_PB10
 Text Label 8450 5050 2    60   ~ 0
 MCU_DIO_PB11
-Text Label 9200 3000 2    60   ~ 0
+Text Label 9200 2550 2    60   ~ 0
 MCU_LED_1
-Text Label 9200 3100 2    60   ~ 0
+Text Label 9200 2650 2    60   ~ 0
 MCU_LED_2
-Text Label 9200 3200 2    60   ~ 0
+Text Label 9200 2750 2    60   ~ 0
 MCU_LED_3
-Text Label 9200 3300 2    60   ~ 0
+Text Label 9200 2850 2    60   ~ 0
 MCU_LED_4
 $Comp
 L GND #PWR054
@@ -1186,7 +1181,7 @@ Text Notes 7550 6250 0    60   ~ 0
 PD
 Text Notes 11100 4600 2    60   ~ 0
 GPIO Breakout
-Text Notes 10850 2850 2    60   ~ 0
+Text Notes 10850 2400 2    60   ~ 0
 LED Controls
 Text Label 4950 1200 2    60   ~ 0
 OSC32_IN
@@ -1346,10 +1341,6 @@ Wire Wire Line
 	6450 2200 6850 2200
 Wire Wire Line
 	4550 1800 4950 1800
-Wire Wire Line
-	4550 1900 4950 1900
-Wire Wire Line
-	4550 2000 4950 2000
 Wire Notes Line
 	10500 1450 10500 2100
 Wire Wire Line
@@ -1675,13 +1666,13 @@ Wire Wire Line
 Wire Wire Line
 	10500 6250 10650 6250
 Wire Wire Line
-	10300 3000 9200 3000
+	10300 2550 9200 2550
 Wire Wire Line
-	10300 3100 9200 3100
+	10300 2650 9200 2650
 Wire Wire Line
-	10300 3200 9200 3200
+	10300 2750 9200 2750
 Wire Wire Line
-	10300 3300 9200 3300
+	10300 2850 9200 2850
 Wire Wire Line
 	8500 4400 8500 4250
 Wire Wire Line
@@ -1727,8 +1718,6 @@ Connection ~ 9950 4250
 Wire Wire Line
 	9850 4400 9850 4250
 Wire Wire Line
-	6450 1400 6850 1400
-Wire Wire Line
 	4550 2400 4950 2400
 $Comp
 L SW_Push_4pin SW3
@@ -1758,4 +1747,88 @@ F 3 "" H 8550 1550 50  0001 C CNN
 $EndComp
 NoConn ~ 4900 5600
 NoConn ~ 4900 5200
+NoConn ~ 6450 1400
+Wire Wire Line
+	4950 3500 4550 3500
+Wire Wire Line
+	4950 3600 4550 3600
+Wire Wire Line
+	4950 3700 4550 3700
+NoConn ~ 4950 1900
+NoConn ~ 4950 2000
+Wire Wire Line
+	6450 3500 6850 3500
+Text Label 6850 3500 0    60   ~ 0
+MCU_PWREN
+Text Label 9200 3200 2    60   ~ 0
+MCU_PWREN
+Text HLabel 10300 3200 2    60   Input ~ 0
+MCU.PWREN
+Text Notes 10850 3100 2    60   ~ 0
+USB Power Status Inputs
+$Comp
+L R R93
+U 1 1 5A214822
+P 9750 3200
+F 0 "R93" V 9800 3400 50  0000 C CNN
+F 1 "180" V 9750 3200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402_NoSilk" V 9680 3200 50  0001 C CNN
+F 3 "" H 9750 3200 50  0001 C CNN
+	1    9750 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9900 3200 10300 3200
+Wire Wire Line
+	9600 3200 9200 3200
+Text HLabel 10300 3300 2    60   Input ~ 0
+MCU.USBON
+Wire Wire Line
+	10300 3300 9900 3300
+$Comp
+L R R94
+U 1 1 5A2157A3
+P 9750 3300
+F 0 "R94" V 9800 3500 50  0000 C CNN
+F 1 "180" V 9750 3300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402_NoSilk" V 9680 3300 50  0001 C CNN
+F 3 "" H 9750 3300 50  0001 C CNN
+	1    9750 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9600 3300 9200 3300
+Text Label 6850 3400 0    60   ~ 0
+MCU_USBON
+Wire Wire Line
+	6450 3400 6850 3400
+$Comp
+L R R92
+U 1 1 5A216900
+P 9400 3550
+F 0 "R92" V 9450 3750 50  0000 C CNN
+F 1 "10k" V 9400 3550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402_NoSilk" V 9330 3550 50  0001 C CNN
+F 3 "" H 9400 3550 50  0001 C CNN
+	1    9400 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 3400 9400 3300
+Connection ~ 9400 3300
+Wire Wire Line
+	9400 3700 9400 3800
+$Comp
+L GND #PWR057
+U 1 1 5A217257
+P 9400 3800
+F 0 "#PWR057" H 9400 3550 50  0001 C CNN
+F 1 "GND" H 9400 3650 50  0000 C CNN
+F 2 "" H 9400 3800 50  0001 C CNN
+F 3 "" H 9400 3800 50  0001 C CNN
+	1    9400 3800
+	-1   0    0    -1  
+$EndComp
+Text Label 9200 3300 2    60   ~ 0
+MCU_USBON
 $EndSCHEMATC
