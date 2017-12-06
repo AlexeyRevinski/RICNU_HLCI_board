@@ -396,11 +396,11 @@ Text Label 7950 5550 0    60   ~ 0
 MCU_UART_TX
 Text Label 7950 5450 0    60   ~ 0
 MCU_UART_RX
-Text Label 7950 5800 0    60   ~ 0
+Text Label 8000 5900 0    60   ~ 0
 BT_BOOT0
-Text Label 7950 5900 0    60   ~ 0
+Text Label 8000 6000 0    60   ~ 0
 BT_UART_TX
-Text Label 7950 6000 0    60   ~ 0
+Text Label 8000 6100 0    60   ~ 0
 BT_UART_RX
 Wire Wire Line
 	7900 1500 8600 1500
