@@ -79,8 +79,8 @@ $Comp
 L D_TVS D12
 U 1 1 59FB58B9
 P 7000 4250
-F 0 "D12" V 7150 4100 50  0000 C CNN
-F 1 "3.3V TVS" H 6900 4100 50  0000 C CNN
+F 0 "D12" V 7200 4100 50  0000 C CNN
+F 1 "3.3V TVS" V 6800 4050 50  0000 C CNN
 F 2 "Diodes_SMD:D_SOD-523" H 7000 4250 50  0001 C CNN
 F 3 "" H 7000 4250 50  0001 C CNN
 	1    7000 4250
@@ -97,8 +97,6 @@ F 3 "" H 4600 5100 50  0001 C CNN
 	1    4600 5100
 	1    0    0    -1  
 $EndComp
-Text Notes 6550 5300 0    60   ~ 0
-CPDQC3V3T-HF
 $Comp
 L +3V3 #PWR089
 U 1 1 59FB58D0
@@ -116,19 +114,6 @@ Text Notes 800  7150 0    60   ~ 0
 *  In case of reverse plug, Vref ends up on Reset - still 3.3V, but data lines are grounded
 Text Notes 800  7250 0    60   ~ 0
 *  Zener not necessary? I am supplying the 3V3 to the debugger for level translation; overvoltage not likely\n
-Text Notes 6100 5300 0    60   ~ 0
-TVS
-$Comp
-L R R85
-U 1 1 59FB5908
-P 6000 3100
-F 0 "R85" V 6080 3100 50  0000 C CNN
-F 1 "180" V 6000 3100 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402_NoSilk" V 5930 3100 50  0001 C CNN
-F 3 "" H 6000 3100 50  0001 C CNN
-	1    6000 3100
-	0    1    1    0   
-$EndComp
 $Comp
 L D_Schottky D13
 U 1 1 59FB590F
@@ -175,17 +160,31 @@ F 3 "" H 4600 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4500 3600 7350 3600
+	4500 3600 4600 3600
 Wire Wire Line
-	4500 3700 7350 3700
+	4600 3600 5950 3600
+Wire Wire Line
+	5950 3600 7350 3600
+Wire Wire Line
+	4500 3700 4600 3700
+Wire Wire Line
+	4600 3700 4750 3700
+Wire Wire Line
+	4750 3700 7350 3700
 Wire Wire Line
 	7250 3500 7350 3500
 Wire Wire Line
 	7250 3100 7250 3500
 Wire Wire Line
-	6400 3100 6150 3100
+	6400 3100 5450 3100
 Wire Wire Line
-	4600 5000 7250 5000
+	4600 5000 4850 5000
+Wire Wire Line
+	4850 5000 5850 5000
+Wire Wire Line
+	5850 5000 7000 5000
+Wire Wire Line
+	7000 5000 7250 5000
 Wire Wire Line
 	7250 5000 7250 3900
 Wire Wire Line
@@ -198,7 +197,9 @@ Connection ~ 4750 3700
 Wire Wire Line
 	5750 4300 5850 4300
 Wire Wire Line
-	5850 4200 5850 4600
+	5850 4200 5850 4300
+Wire Wire Line
+	5850 4300 5850 4600
 Connection ~ 5850 4300
 Wire Wire Line
 	5850 4900 5850 5000
@@ -207,7 +208,9 @@ Wire Wire Line
 Connection ~ 7000 5000
 Connection ~ 5850 5000
 Wire Wire Line
-	4500 3800 7350 3800
+	4500 3800 4850 3800
+Wire Wire Line
+	4850 3800 7350 3800
 Connection ~ 4850 5000
 Wire Wire Line
 	4600 3700 4600 4200
@@ -216,16 +219,22 @@ Wire Wire Line
 	4600 3500 4600 3600
 Connection ~ 4600 3600
 Wire Wire Line
-	4600 3000 4600 3200
+	4600 3000 4600 3100
 Wire Wire Line
-	4600 3100 5850 3100
+	4600 3100 4600 3200
 Wire Wire Line
-	6700 3100 7250 3100
+	4600 3100 5150 3100
+Wire Wire Line
+	6700 3100 7000 3100
+Wire Wire Line
+	7000 3100 7250 3100
 Connection ~ 4600 3100
 Wire Wire Line
 	4850 4500 4850 5000
 Wire Wire Line
-	4600 4500 4600 5100
+	4600 4500 4600 5000
+Wire Wire Line
+	4600 5000 4600 5100
 Connection ~ 4600 5000
 Text Notes 7600 3550 0    60   ~ 0
 VREF
@@ -252,7 +261,7 @@ F 3 "" H 7700 3850 60  0001 C CNN
 $EndComp
 Text Label 7250 3100 2    60   ~ 0
 SWD_VREF
-Text Label 6300 3100 1    60   ~ 0
+Text Label 5750 3100 0    60   ~ 0
 SWD_SCHKY
 NoConn ~ 7350 3400
 NoConn ~ 7350 3300
@@ -272,4 +281,15 @@ Wire Wire Line
 	4750 4400 4750 3700
 Wire Wire Line
 	4850 4300 4850 3800
+$Comp
+L R R85
+U 1 1 59FB5908
+P 5300 3100
+F 0 "R85" V 5380 3100 50  0000 C CNN
+F 1 "180" V 5300 3100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402_NoSilk" V 5230 3100 50  0001 C CNN
+F 3 "" H 5300 3100 50  0001 C CNN
+	1    5300 3100
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

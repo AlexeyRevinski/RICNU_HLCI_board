@@ -145,7 +145,7 @@ L Polyfuse F1
 U 1 1 5A024FCA
 P 6000 3600
 F 0 "F1" V 6100 3600 50  0000 C CNN
-F 1 "Polyfuse" V 5900 3600 50  0000 C CNN
+F 1 "PTC 200mA" V 5900 3600 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 6050 3400 50  0001 L CNN
 F 3 "" H 6000 3600 50  0001 C CNN
 	1    6000 3600
@@ -228,12 +228,6 @@ F 3 "" H 8000 3100 50  0001 C CNN
 	1    8000 3100
 	1    0    0    -1  
 $EndComp
-Text Notes 6500 3900 0    60   ~ 0
-3SMAJ5919B
-Text Notes 5800 4350 0    60   ~ 0
-DF2B7AFS,L3M
-Text Notes 5600 3400 0    60   ~ 0
-0ZCJ0025AF2E
 Wire Wire Line
 	3550 4200 3550 4300
 Wire Wire Line
@@ -305,14 +299,6 @@ Wire Wire Line
 Wire Wire Line
 	6000 3850 6000 4650
 Connection ~ 6000 4650
-Text Notes 6950 4350 0    60   ~ 0
-NPO/C0G dielectric
-Text Notes 7400 3300 0    60   ~ 0
-?
-Text Notes 6650 3300 0    60   ~ 0
-BK0603HS330-T
-Text Notes 3900 4450 0    60   ~ 0
-NPO/C0G dielectric
 Wire Wire Line
 	3350 4600 3350 4700
 Connection ~ 3550 4650
@@ -396,4 +382,6 @@ Text Label 8000 3750 0    60   ~ 0
 VBUS_PROTECTED_FILTERED
 Text Label 3350 4250 2    60   ~ 0
 USB_SHIELD
+Text Notes 3950 4450 0    60   ~ 0
+NPO/C0G
 $EndSCHEMATC

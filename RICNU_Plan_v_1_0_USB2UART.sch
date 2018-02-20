@@ -69,13 +69,13 @@ F 3 "" H 7150 4700 50  0001 C CNN
 	1    7150 4700
 	1    0    0    -1  
 $EndComp
-Text HLabel 4950 3350 0    60   Output ~ 0
+Text HLabel 4500 3350 0    60   Output ~ 0
 U2U.TX
-Text HLabel 4950 3750 0    60   Input ~ 0
+Text HLabel 4500 3750 0    60   Input ~ 0
 U2U.RX
-Text HLabel 6200 5000 0    60   BiDi ~ 0
+Text HLabel 4500 5000 0    60   BiDi ~ 0
 U2U.USB.DP
-Text HLabel 6200 5100 0    60   BiDi ~ 0
+Text HLabel 4500 5100 0    60   BiDi ~ 0
 U2U.USB.DM
 $Comp
 L +5V_USB_P #PWR023
@@ -225,23 +225,33 @@ Wire Wire Line
 Wire Wire Line
 	7150 4150 6450 4150
 Wire Wire Line
-	7150 3750 7150 4550
+	7150 3750 7150 4000
+Wire Wire Line
+	7150 4000 7150 4150
+Wire Wire Line
+	7150 4150 7150 4550
 Wire Wire Line
 	7150 3150 7150 3450
 Connection ~ 7150 4150
 Wire Wire Line
-	4950 3750 5350 3750
+	4500 3750 5150 3750
+Wire Wire Line
+	5150 3750 5350 3750
 Wire Wire Line
 	5150 3750 5150 3250
 Wire Wire Line
 	5150 2850 5150 2950
 Connection ~ 5150 3750
 Wire Wire Line
-	4950 3350 5350 3350
+	4500 3350 5350 3350
 Wire Wire Line
 	6900 4850 6900 4950
 Wire Wire Line
-	6900 4250 6900 4550
+	6900 4250 6900 4350
+Wire Wire Line
+	6900 4350 6900 4450
+Wire Wire Line
+	6900 4450 6900 4550
 Wire Wire Line
 	6450 4250 6900 4250
 Wire Wire Line
@@ -254,11 +264,11 @@ Wire Wire Line
 Wire Wire Line
 	6650 4050 6450 4050
 Wire Wire Line
-	6200 5000 6550 5000
+	4500 5000 6550 5000
 Wire Wire Line
 	6550 5000 6550 4650
 Wire Wire Line
-	6650 5100 6200 5100
+	6650 5100 4500 5100
 Wire Wire Line
 	5350 3950 5150 3950
 Wire Wire Line
@@ -314,18 +324,20 @@ F 3 "" H 5150 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4950 4650 5350 4650
+	4500 4650 5150 4650
+Wire Wire Line
+	5150 4650 5350 4650
 Wire Wire Line
 	5150 4650 5150 4600
 Wire Wire Line
 	5150 4200 5150 4300
 Connection ~ 5150 4650
-Text HLabel 4950 4650 0    60   Output ~ 0
+Text HLabel 4500 4650 0    60   Output ~ 0
 U2U.PWREN
-Text HLabel 7300 4350 2    60   Output ~ 0
+Text HLabel 7650 4350 2    60   Output ~ 0
 U2U.USBON
 Wire Wire Line
-	6900 4350 7300 4350
+	6900 4350 7650 4350
 Connection ~ 6900 4350
 Wire Wire Line
 	5150 4200 4550 4200
