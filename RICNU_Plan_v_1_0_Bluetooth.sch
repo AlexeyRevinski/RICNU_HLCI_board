@@ -86,12 +86,6 @@ F 3 "" H 7100 2950 50  0001 C CNN
 	1    7100 2950
 	1    0    0    -1  
 $EndComp
-Text Notes 2450 7350 0    60   ~ 0
-BOOT0 has internal pull down; pulled up via the SPDT switch, \nand pulled down normally by a 50k resistor in UARTDriver
-Text Notes 4400 6900 0    60   ~ 0
-RESET has internal pull up
-Text Notes 1350 7000 0    60   ~ 0
-The chip has internal decoupling/bypass caps, \nso the 100n may not be needed; placeholder
 $Comp
 L R R21
 U 1 1 59F5F953
@@ -117,13 +111,7 @@ $EndComp
 Wire Wire Line
 	6900 4800 6900 4700
 Wire Wire Line
-	4500 4800 6500 4800
-Wire Wire Line
-	6500 4800 6700 4800
-Wire Wire Line
-	6700 4800 6900 4800
-Wire Wire Line
-	6900 4800 7100 4800
+	4500 4800 7100 4800
 Wire Wire Line
 	6700 4800 6650 4800
 Connection ~ 6900 4800
@@ -140,25 +128,13 @@ NoConn ~ 5600 4700
 NoConn ~ 5700 4700
 NoConn ~ 5800 4700
 Wire Wire Line
-	4500 3150 4500 3250
-Wire Wire Line
-	4500 3250 4500 3350
-Wire Wire Line
-	4500 3350 4500 4350
-Wire Wire Line
-	4500 4350 4500 4800
+	4500 3150 4500 4800
 Wire Wire Line
 	4500 4350 4600 4350
 Wire Wire Line
 	6500 4350 6400 4350
 Wire Wire Line
-	6500 3150 6500 3250
-Wire Wire Line
-	6500 3250 6500 3350
-Wire Wire Line
-	6500 3350 6500 4350
-Wire Wire Line
-	6500 4350 6500 4800
+	6500 3150 6500 4800
 Wire Wire Line
 	6400 3150 6500 3150
 Connection ~ 6500 4350
@@ -182,9 +158,7 @@ Connection ~ 6500 4800
 Wire Wire Line
 	6400 3450 7100 3450
 Wire Wire Line
-	7100 3300 7100 3450
-Wire Wire Line
-	7100 3450 7100 3750
+	7100 3300 7100 3750
 $Comp
 L GND #PWR041
 U 1 1 59FBE729
@@ -197,9 +171,7 @@ F 3 "" H 7100 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7100 4050 7100 4800
-Wire Wire Line
-	7100 4800 7100 4900
+	7100 4050 7100 4900
 Connection ~ 7100 3450
 Wire Wire Line
 	7100 2950 7100 3000
@@ -215,9 +187,7 @@ F 3 "" H 6650 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6400 3650 6650 3650
-Wire Wire Line
-	6650 3650 7500 3650
+	6400 3650 7500 3650
 Wire Wire Line
 	6650 3650 6650 3300
 Connection ~ 7100 4800
@@ -242,9 +212,7 @@ NoConn ~ 6400 3750
 Wire Wire Line
 	7500 4150 6400 4150
 Wire Wire Line
-	6400 4250 6700 4250
-Wire Wire Line
-	6700 4250 6900 4250
+	6400 4250 6900 4250
 Text Label 6900 4250 0    60   ~ 0
 BT_RESET
 Text Label 7100 3450 0    60   ~ 0

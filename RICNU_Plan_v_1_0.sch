@@ -102,18 +102,6 @@ F5 "RS485.DE" I R 5500 4600 60
 F6 "RS485.D" I R 5500 4500 60 
 F7 "RS485.R" O R 5500 4800 60 
 $EndSheet
-Text Notes 7100 8750 0    60   ~ 0
-Pull up or pull down?
-Text Notes 4700 8400 0    60   ~ 0
-*  Protection: 180 (acts as source termination as well, but probably too high!)
-Text Notes 4700 8500 0    60   ~ 0
-*  End termination: 10k up/down
-Text Notes 4700 8600 0    60   ~ 0
-*  Source termination: 22
-Text Notes 6350 9350 0    60   ~ 0
-Acceptable logic current for CAN transceiver is 8mA
-Text Notes 9800 9550 0    60   ~ 0
-Series protection resistor included in "Breakout"
 $Sheet
 S 8600 5800 1700 400 
 U 59D3E54A
@@ -123,10 +111,6 @@ F2 "BT.BOOT0" I L 8600 5900 60
 F3 "BT.RX" I L 8600 6100 60 
 F4 "BT.TX" O L 8600 6000 60 
 $EndSheet
-Text Notes 6750 9100 0    60   ~ 0
-need to talk about the 470 resistor...
-Text Notes 850  9000 0    60   ~ 0
-Open copper ring around the periphery of the board\nstitched throughout with vias & connected to USB shield \nand SD card shield. - ESD protection and edge EMC.\nAn external ESD strike will prefer the ring/shield casing for SD/USB instead \nof the components, and will be either earthed if connected to PC+wall\nor discharged into board ground via multiple small caps (see SD and USB).\nIf on the knee, discharged into the screw(s?) and into the metal leg
 $Sheet
 S 6200 1400 1700 3700
 U 59D3E349
@@ -177,14 +161,6 @@ F43 "MCU.PA0" B R 7900 1500 60
 F44 "MCU.PWREN" I L 6200 4900 60 
 F45 "MCU.USBON" I L 6200 5000 60 
 $EndSheet
-Text Notes 10400 9200 0    60   ~ 0
-PB3 is clock line for SPI
-Text Notes 9300 8850 0    60   ~ 0
-Layer 1: Signals\nLayer 2: GND\nLayer 3: 3.3V\nLayer 4: Signals
-Text Notes 10250 8850 0    60   ~ 0
-MCU, SD, USB, Power, Breakout, Ext connectors, BT\n\n\nUARTdriver, FTDI, CAN, RS-485, PUs/PDs/Series
-Text Notes 9300 8350 0    60   ~ 0
-Preliminary board stackup
 $Sheet
 S 1400 5150 1700 300 
 U 59FC1198
@@ -497,11 +473,11 @@ F2 "SWD.SWDIO" B R 3100 3100 60
 F3 "SWD.SWCLK" O R 3100 3200 60 
 F4 "SWD.RESET" O R 3100 3300 60 
 $EndSheet
-Text Notes 2800 6700 0    60   ~ 0
+Text Notes 700  7600 0    60   ~ 0
 A and B for SN65HVD75 are \nopposite of RS-485 standard
-Text Notes 4300 4500 0    60   ~ 0
+Text Notes 4300 4550 0    60   ~ 0
 *
-Text Notes 2700 6600 0    60   ~ 0
+Text Notes 600  7500 0    60   ~ 0
 *
 Wire Wire Line
 	6200 4900 6000 4900

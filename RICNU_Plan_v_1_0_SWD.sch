@@ -108,12 +108,6 @@ F 3 "" H 5850 4200 50  0001 C CNN
 	1    5850 4200
 	1    0    0    -1  
 $EndComp
-Text Notes 800  7050 0    60   ~ 0
-*  Reverse plug not likely... Perhaps internal short in the debugger can happen - that's why there is a fuse
-Text Notes 800  7150 0    60   ~ 0
-*  In case of reverse plug, Vref ends up on Reset - still 3.3V, but data lines are grounded
-Text Notes 800  7250 0    60   ~ 0
-*  Zener not necessary? I am supplying the 3V3 to the debugger for level translation; overvoltage not likely\n
 $Comp
 L D_Schottky D13
 U 1 1 59FB590F
@@ -160,17 +154,9 @@ F 3 "" H 4600 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4500 3600 4600 3600
+	4500 3600 7350 3600
 Wire Wire Line
-	4600 3600 5950 3600
-Wire Wire Line
-	5950 3600 7350 3600
-Wire Wire Line
-	4500 3700 4600 3700
-Wire Wire Line
-	4600 3700 4750 3700
-Wire Wire Line
-	4750 3700 7350 3700
+	4500 3700 7350 3700
 Wire Wire Line
 	7250 3500 7350 3500
 Wire Wire Line
@@ -178,13 +164,7 @@ Wire Wire Line
 Wire Wire Line
 	6400 3100 5450 3100
 Wire Wire Line
-	4600 5000 4850 5000
-Wire Wire Line
-	4850 5000 5850 5000
-Wire Wire Line
-	5850 5000 7000 5000
-Wire Wire Line
-	7000 5000 7250 5000
+	4600 5000 7250 5000
 Wire Wire Line
 	7250 5000 7250 3900
 Wire Wire Line
@@ -197,9 +177,7 @@ Connection ~ 4750 3700
 Wire Wire Line
 	5750 4300 5850 4300
 Wire Wire Line
-	5850 4200 5850 4300
-Wire Wire Line
-	5850 4300 5850 4600
+	5850 4200 5850 4600
 Connection ~ 5850 4300
 Wire Wire Line
 	5850 4900 5850 5000
@@ -208,9 +186,7 @@ Wire Wire Line
 Connection ~ 7000 5000
 Connection ~ 5850 5000
 Wire Wire Line
-	4500 3800 4850 3800
-Wire Wire Line
-	4850 3800 7350 3800
+	4500 3800 7350 3800
 Connection ~ 4850 5000
 Wire Wire Line
 	4600 3700 4600 4200
@@ -219,22 +195,16 @@ Wire Wire Line
 	4600 3500 4600 3600
 Connection ~ 4600 3600
 Wire Wire Line
-	4600 3000 4600 3100
-Wire Wire Line
-	4600 3100 4600 3200
+	4600 3000 4600 3200
 Wire Wire Line
 	4600 3100 5150 3100
 Wire Wire Line
-	6700 3100 7000 3100
-Wire Wire Line
-	7000 3100 7250 3100
+	6700 3100 7250 3100
 Connection ~ 4600 3100
 Wire Wire Line
 	4850 4500 4850 5000
 Wire Wire Line
-	4600 4500 4600 5000
-Wire Wire Line
-	4600 5000 4600 5100
+	4600 4500 4600 5100
 Connection ~ 4600 5000
 Text Notes 7600 3550 0    60   ~ 0
 VREF

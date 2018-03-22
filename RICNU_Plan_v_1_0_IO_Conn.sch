@@ -307,14 +307,6 @@ F 3 "" H 5300 2050 50  0001 C CNN
 	1    5300 2050
 	1    0    0    -1  
 $EndComp
-Text Notes 3800 7400 0    60   ~ 0
-180R limits current to 22.78 mA max if two sides disagree\non output level and external voltage is higher or lower than supply
-Text Notes 1450 6900 0    60   ~ 0
-Diodes clamp between -0.8 to 4.1V
-Text Notes 800  7400 0    60   ~ 0
-Also limit injection current to 2.78 mA if \nsignals go below 0 and above 3.3. ESD clamps \nat -0.8 and 4.1V. All pins except for SPI NSS are 5V tolerant.\nSo, -0.3 - -0.8 = -0.5; -0.5/180 = -2.78mA
-Text Notes 4100 7000 0    60   ~ 0
-All pins except for SPI NSS are 5V tolerant, too
 Wire Wire Line
 	3650 5250 5600 5250
 Wire Wire Line

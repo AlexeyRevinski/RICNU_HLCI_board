@@ -172,14 +172,6 @@ Connection ~ 5050 3900
 Wire Wire Line
 	5050 3600 5050 3800
 Connection ~ 5050 3800
-Text Notes 2500 6050 0    60   ~ 0
-DE - internal pull down (device shutdown), but external pull down just in case
-Text Notes 2500 6150 0    60   ~ 0
-D - internal pull up
-Text Notes 2500 6250 0    60   ~ 0
-RE# - nothing, but pull up to limit current during transients (receiver not enabled)
-Text Notes 2500 6400 0    60   ~ 0
-Any other termination besides 120?
 $Comp
 L R R18
 U 1 1 59F62F85

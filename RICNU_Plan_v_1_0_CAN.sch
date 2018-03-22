@@ -103,10 +103,6 @@ F 3 "" H 5300 2950 50  0001 C CNN
 	1    5300 2950
 	1    0    0    -1  
 $EndComp
-Text Notes 1050 7200 0    60   ~ 0
-SHDN and STB have internal pull downs for normal mode;\nneed to be pulled high by MCU for the chip to standby/shutdown mode
-Text Notes 1050 6950 0    60   ~ 0
-TXD - internal pull up (weak but should be okay)
 $Comp
 L GND #PWR034
 U 1 1 59FB2A25

@@ -66,8 +66,6 @@ F 3 "" H 7150 4400 50  0001 C CNN
 	1    7150 4400
 	0    1    1    0   
 $EndComp
-Text Notes 7300 4450 0    60   ~ 0
-CPDQC3V3T-HF
 $Comp
 L +3V3 #PWR069
 U 1 1 59FB6A2D
@@ -123,8 +121,6 @@ F 3 "" H 4600 3400 50  0001 C CNN
 	1    4600 3400
 	1    0    0    -1  
 $EndComp
-Text Notes 8800 3950 0    60   ~ 0
-TBX0104 on MNG side
 $Comp
 L TPD4E004 TVS3
 U 1 1 5A05062F

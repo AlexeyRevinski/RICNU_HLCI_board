@@ -318,22 +318,6 @@ F 3 "" H 3350 4450 50  0001 C CNN
 	1    3350 4450
 	-1   0    0    1   
 $EndComp
-Text Notes 150  8800 0    60   ~ 0
-*  A strike on the shield will go through the 47p cap; 4.7k to stop that energy from bouncing back (recommendation, unclear)
-Text Notes 150  8950 0    60   ~ 0
-*  Ferrite bead suppresses any EMI from upstream or downstream
-Text Notes 150  9100 0    60   ~ 0
-*  Add a common mode choke on data lines? Differential + twisted pair
-Text Notes 150  9250 0    60   ~ 0
-*  Zener should clamp at 5.6V but fuse is the only current limiter here... Should trip at 500mA (max through Zener is 534 mA) but TIME!!!
-Text Notes 150  9400 0    60   ~ 0
-*  TVS on the power line will discharge ESD into cable ground
-Text Notes 150  9550 0    60   ~ 0
-*  MOSFET - normally shorts out the internal diode; if reverse plug, won't connect drain and source; device is disconnected from cable ground
-Text Notes 150  9700 0    60   ~ 0
-*  10n/bead/100n/4.7u - recommendation from FTDI on filtering... not sure why bead is after 10n
-Text Notes 150  9850 0    60   ~ 0
-*  Fuse - after tripping, 2.3Ohms max. Average expected current - 50-70 mA; Dissipated P = R*I^2 = 6 to 11 mW
 Text Label 4500 4650 0    60   ~ 0
 GND_USB_CABLE
 $Comp

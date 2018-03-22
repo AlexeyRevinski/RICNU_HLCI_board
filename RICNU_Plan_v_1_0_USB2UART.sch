@@ -225,18 +225,12 @@ Wire Wire Line
 Wire Wire Line
 	7150 4150 6450 4150
 Wire Wire Line
-	7150 3750 7150 4000
-Wire Wire Line
-	7150 4000 7150 4150
-Wire Wire Line
-	7150 4150 7150 4550
+	7150 3750 7150 4550
 Wire Wire Line
 	7150 3150 7150 3450
 Connection ~ 7150 4150
 Wire Wire Line
-	4500 3750 5150 3750
-Wire Wire Line
-	5150 3750 5350 3750
+	4500 3750 5350 3750
 Wire Wire Line
 	5150 3750 5150 3250
 Wire Wire Line
@@ -247,11 +241,7 @@ Wire Wire Line
 Wire Wire Line
 	6900 4850 6900 4950
 Wire Wire Line
-	6900 4250 6900 4350
-Wire Wire Line
-	6900 4350 6900 4450
-Wire Wire Line
-	6900 4450 6900 4550
+	6900 4250 6900 4550
 Wire Wire Line
 	6450 4250 6900 4250
 Wire Wire Line
@@ -324,9 +314,7 @@ F 3 "" H 5150 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4500 4650 5150 4650
-Wire Wire Line
-	5150 4650 5350 4650
+	4500 4650 5350 4650
 Wire Wire Line
 	5150 4650 5150 4600
 Wire Wire Line

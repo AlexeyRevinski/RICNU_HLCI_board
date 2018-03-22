@@ -246,20 +246,6 @@ F 3 "" H 8650 4600 50  0001 C CNN
 	1    8650 4600
 	1    0    0    -1  
 $EndComp
-Text Notes 4350 6800 0    60   ~ 0
-0 Ohm for testing
-Text Notes 1800 7650 0    60   ~ 0
-0 Ohm for testing
-Text Notes 1700 6950 0    60   ~ 0
-450k/100k --> Feedback = 0.6 V at SW = 3.3V
-Text Notes 1750 7150 0    60   ~ 0
-LC recommended by TI as 2.2uH and 10uF
-Text Notes 1800 7350 0    60   ~ 0
-Optional; placeholder
-Text Notes 1650 6600 0    60   ~ 0
-VSNS = 0.833 when USB = 5.0 V. When USB not present, EXT is connected
-Text Notes 1650 6750 0    60   ~ 0
-Current limited to 500mA - too high?
 $Comp
 L PWR_FLAG #FLG06
 U 1 1 5A03C349
